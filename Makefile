@@ -20,7 +20,6 @@ lint:
 
 .PHONY: clean
 clean:
-	rm -rf pipelines/github_rag_pipeline.yaml
 	find . -type d -name "__pycache__" -exec rm -rf {} +
 	find . -type f -name "*.pyc" -delete
 
