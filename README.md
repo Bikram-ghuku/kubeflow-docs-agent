@@ -15,6 +15,7 @@ The official LLM implementation of the Kubeflow Documentation Assistant powered 
   - [Kubeflow Pipelines](#kubeflow-pipelines)
   - [API Server](#api-server)
 - [Usage](#usage)
+  - [Makefile](#makefile)
 - [Configuration](#configuration)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
@@ -406,6 +407,31 @@ data: {"type": "done"}
 **Critical**: Both APIs require SSL certificates from a trusted Certificate Authority. Without proper SSL certificates, browsers will block WebSocket connections and HTTPS requests.
 
 ## Usage
+
+### Use Makefile
+  1. **Compile**: Compile the pipeline
+    ```bash
+      make compile
+    ```
+
+  2. **Build**: Build the docker images
+    ```bash
+      make build
+    ```
+
+  3. **Clean**: Clean all present pipeline cache and temp
+    ```bash
+      make clean
+    ```
+  4. **Test**: Tests the code using pytest
+    ```bash
+      make test
+    ```
+
+  5. **Lint**: Run linting check for codes
+    ```bash
+      make lint
+    ```
 
 ### Starting the Services
 
