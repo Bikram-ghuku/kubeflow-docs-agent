@@ -410,28 +410,28 @@ data: {"type": "done"}
 
 ### Use Makefile
   1. **Compile**: Compile the pipeline
-    ```bash
-      make compile
-    ```
+  ```bash
+  make compile
+  ```
 
   2. **Build**: Build the docker images
-    ```bash
-      make build
-    ```
+  ```bash
+  make build
+  ```
 
   3. **Clean**: Clean all present pipeline cache and temp
-    ```bash
-      make clean
-    ```
+  ```bash
+  make clean
+  ```
   4. **Test**: Tests the code using pytest
-    ```bash
-      make test
-    ```
+  ```bash
+  make test
+  ```
 
   5. **Lint**: Run linting check for codes
-    ```bash
-      make lint
-    ```
+  ```bash
+  make lint 
+  ```
 
 ### Starting the Services
 
